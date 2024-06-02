@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-app-config
+data:
+  appsettings.json: |
+    {
+      "ConnectionStrings": {
+        "MovieContext": "Server=tcp:52.249.247.94,1433;Initial Catalog=MovieContext;Persist Security Info=False;User ID=sa;Password=Welcome@0001234567;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=true;Connection Timeout=30;"
+      },
+      "AppSetting2": "Value2"
+    }
